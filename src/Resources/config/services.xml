@@ -32,7 +32,7 @@
             <tag name="Shopware\Core\Checkout\Cart\CollectorInterface" priority="1200"/>
         </service>
 
-        <service id="ShopwareLabs\Plugin\SwagBundleExample\Core\Content\Product\Storefront\StorefrontProductRepositoryDecorator" decorates="Shopware\Core\Content\Product\Storefront\StorefrontProductRepository">
+        <service id="ShopwareLabs\Plugin\SwagBundleExample\Core\Content\Product\Storefront\StorefrontProductRepositoryDecorator" decorates="sales_channel.product.repository">
             <argument id="product.repository" type="service"/>
             <argument id="Shopware\Core\Checkout\Cart\Price\QuantityPriceCalculator" type="service"/>
         </service>
